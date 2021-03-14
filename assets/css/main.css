@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 
+/* FONT */
+@font-face {
+    font-family: "ROCHA", sans-serif;
+    
+    src: url(/assets/fonts/RozhaOne-Regular.ttf);
+}
+
+* {
+    font-family: ROCHA;
+   }
+
 /* COLOUR SCHEME */
 
 :root {
@@ -41,16 +52,12 @@ TOP NAVIGATION STUFF BEGINS
 /* Change the color of links on hover */
 
 .topnav a:hover {
-    background-color: var(--light-background-highlight);
-    color: var(--main-text-colour);
+    text-decoration: underline;
 }
-
-
 /* Add an active class to highlight the current page */
 
 .topnav a.active {
-    background-color: var(--accent-colour);
-    color: var(--white);
+    text-decoration: underline;
 }
 
 
@@ -70,15 +77,23 @@ TOP NAVIGATION STUFF ENDS
 MEDIA QUERIES 
 */
 
+#hamburger {
+    display: none;
+}
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, hide all link. Show the link that contains should open and close the topnav (.icon) */
 
 @media screen and (max-width: 600px) {
     .topnav a {
         display: none;
     }
-    .topnav a.icon {
-        float: right;
+
+    .topnav icon {
+        float: left;
+        display: block;
+    }
+
+    #hamburger {
         display: block;
     }
 }
@@ -98,7 +113,7 @@ MEDIA QUERIES
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: right;
+        text-align: left;
     }
 }
 
