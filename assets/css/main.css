@@ -2,21 +2,22 @@
 @import url(font-awesome.min.css);
 
 /* FONT */
+
 @font-face {
     font-family: "ROCHA", sans-serif;
-    
     src: url(/assets/fonts/RozhaOne-Regular.ttf);
 }
 
 * {
     font-family: ROCHA;
-   }
+}
+
 
 /* COLOUR SCHEME */
 
 :root {
     --light-background: #ffffff;
-    --light-background-highlight: gray;
+    --light-background-highlight: #ffffff;
     --main-text-colour: #000900;
     --accent-colour: red;
     --white: #ffffff;
@@ -31,6 +32,7 @@ TOP NAVIGATION STUFF BEGINS
 /* Add a black background color to the top navigation */
 
 .topnav {
+    float: left;
     background-color: var(--light-background);
     overflow: hidden;
 }
@@ -45,7 +47,6 @@ TOP NAVIGATION STUFF BEGINS
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
 
@@ -54,6 +55,8 @@ TOP NAVIGATION STUFF BEGINS
 .topnav a:hover {
     text-decoration: underline;
 }
+
+
 /* Add an active class to highlight the current page */
 
 .topnav a.active {
@@ -81,18 +84,20 @@ MEDIA QUERIES
     display: none;
 }
 
+
 /* When the screen is less than 600 pixels wide, hide all link. Show the link that contains should open and close the topnav (.icon) */
 
 @media screen and (max-width: 600px) {
+    .topnav {
+        float: right;
+    }
     .topnav a {
         display: none;
     }
-
     .topnav icon {
         float: left;
         display: block;
     }
-
     #hamburger {
         display: block;
     }
@@ -103,7 +108,9 @@ MEDIA QUERIES
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
-        position: relative;
+        position: absolute;
+        right: 0;
+        z-index: 1;
     }
     .topnav.responsive a.icon {
         position: absolute;
@@ -115,11 +122,14 @@ MEDIA QUERIES
         display: block;
         text-align: left;
     }
+    img {
+        max-height: 100vh;
+    }
 }
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 600px;
 }
 
 
@@ -128,8 +138,12 @@ img {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
     grid-gap: 5px;
+    grid-auto-rows: minmax(min-content, max-content);
+    position: absolute;
+    margin-top: 60px;
 }
 
 .fullwidth {
@@ -151,7 +165,7 @@ img {
 /* And the rest */
 
 .centered {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
