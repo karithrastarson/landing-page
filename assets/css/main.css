@@ -3,13 +3,19 @@
 
 /* FONT */
 
-@font-face {
+
+/* @font-face {
     font-family: "ROCHA", sans-serif;
     src: url(/assets/fonts/RozhaOne-Regular.ttf);
+} */
+
+@font-face {
+    font-family: raleway;
+    src: url(/assets/fonts/Raleway-Regular.ttf);
 }
 
 * {
-    font-family: ROCHA;
+    font-family: raleway, sans-serif;
 }
 
 
@@ -17,8 +23,10 @@
 
 :root {
     --light-background: #ffffff;
-    --light-background-highlight: #ffffff;
+    --light-background-highlight: #d3cdcd;
+    --dark-background: #0033cc;
     --main-text-colour: #000900;
+    --white-text-colour: #ffffff;
     --accent-colour: red;
     --white: #ffffff;
 }
@@ -99,6 +107,7 @@ MEDIA QUERIES
         display: block;
     }
     #hamburger {
+        background-color: var(--white)!important;
         display: block;
     }
 }
@@ -111,6 +120,9 @@ MEDIA QUERIES
         position: absolute;
         right: 0;
         z-index: 1;
+        background-color: var(--light-background-highlight);
+        padding: 10px;
+        margin: 5px;
     }
     .topnav.responsive a.icon {
         position: absolute;
@@ -144,6 +156,16 @@ img {
     grid-auto-rows: minmax(min-content, max-content);
     position: absolute;
     margin-top: 60px;
+    place-items: center;
+}
+
+.wrapper-item {
+    padding: 12px;
+}
+
+.wrapper-item.dark {
+    background-color: var(--dark-background);
+    color: var(--white-text-colour);
 }
 
 .fullwidth {
@@ -162,6 +184,23 @@ img {
 }
 
 
+/* Fade in effects */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+
 /* And the rest */
 
 .centered {
@@ -170,4 +209,8 @@ img {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+.section.light {
+    background-color: var(--light-background-highlight);
 }
