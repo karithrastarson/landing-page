@@ -144,6 +144,11 @@ img {
     max-height: 600px;
 }
 
+iframe {
+    max-width: 100%;
+    padding: 10px;
+}
+
 
 /* GRID CONFIG */
 
