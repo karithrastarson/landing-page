@@ -61,14 +61,14 @@ TOP NAVIGATION STUFF BEGINS
 /* Change the color of links on hover */
 
 .topnav a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 
 /* Add an active class to highlight the current page */
 
 .topnav a.active {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 
