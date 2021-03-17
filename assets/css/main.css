@@ -15,7 +15,7 @@
 }
 
 * {
-    font-family: raleway, sans-serif;
+    font-family: frank-new, Arial, sans-serif;
 }
 
 
@@ -136,7 +136,6 @@ MEDIA QUERIES
         z-index: 1;
         right: 0;
         background: var(--light-background-highlight);
-        font-weight: bold;
         opacity: 90%;
         padding: 10px;
         margin: 5px;
@@ -262,11 +261,9 @@ iframe {
 @keyframes fadein {
     from {
         opacity: 0;
-        font-weight: normal;
     }
     to {
         opacity: 0.9;
-        font-weight: bold;
     }
 }
 
@@ -276,11 +273,9 @@ iframe {
 @-moz-keyframes fadein {
     from {
         opacity: 0;
-        font-weight: normal;
     }
     to {
         opacity: 0.9;
-        font-weight: bold;
     }
 }
 
@@ -290,11 +285,9 @@ iframe {
 @-webkit-keyframes fadein {
     from {
         opacity: 0;
-        font-weight: normal;
     }
     to {
         opacity: 0.9;
-        font-weight: bold;
     }
 }
 
@@ -304,11 +297,9 @@ iframe {
 @-ms-keyframes fadein {
     from {
         opacity: 0;
-        font-weight: normal;
     }
     to {
         opacity: 0.9;
-        font-weight: bold;
     }
 }
 
@@ -318,10 +309,8 @@ iframe {
 @-o-keyframes fadein {
     from {
         opacity: 0;
-        font-weight: normal;
     }
     to {
         opacity: 0.9;
-        font-weight: bold;
     }
 }
