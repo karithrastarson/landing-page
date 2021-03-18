@@ -17,18 +17,30 @@
 </head>
 
 <body>
+    <!--Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="home.html">forsíða</a>
+            <a href="veislan.html">veislan</a>
+            <a href="sagan.html">sagan</a>
+            <a href="myndir.html">myndir</a>
+        </div>
+    </div>
+
+
     <!-- Top Navigation -->
     <div class="topnav" id="topnav">
-        <button class="hamburger hamburger--collapse" id="hamburger" type="button" onclick="toggleBurger()">
-        <span class="hamburger-box">
-           <span class="hamburger-inner"></span>
-          </span>
-    </button>
+        <button class="hamburger hamburger--collapse" id="hamburger" type="button" onclick="openNav()">
+            <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+              </span>
+        </button>
         <a href="home.html" class="navlogo"><img src="images/logo/logo.png" /></a>
-        <a href="home.html" class="nav">Forsíða</a>
-        <a href="/sagan.html" class="nav active">Sagan</a>
+        <a href="home.html" class="nav active">Forsíða</a>
+        <a href="/sagan.html" class="nav">Sagan</a>
         <a href="/veislan.html" class="nav">Veislan</a>
-        <a href="/rsvp.html" class="nav ">RSVP</a>
+        <a href="/rsvp.html" class="nav">RSVP</a>
         <a href="/myndir.html" class="nav">Myndir</a>
     </div>
 
