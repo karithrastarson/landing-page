@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $('.fade-in-now').fadeOut('fast').delay(1000).fadeIn('slow');
+
     $(window).scroll(function() {
         $('.fade-in').each(function() {
             var top_of_element = $(this).offset().top;

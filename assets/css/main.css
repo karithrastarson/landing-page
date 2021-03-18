@@ -43,6 +43,7 @@ TOP NAVIGATION STUFF BEGINS
     float: left;
     background-color: var(--light-background);
     overflow: hidden;
+    margin: 20px;
 }
 
 
@@ -68,7 +69,7 @@ TOP NAVIGATION STUFF BEGINS
 /* Add an active class to highlight the current page */
 
 .topnav a.active {
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -93,7 +94,12 @@ MEDIA QUERIES
 }
 
 .navlogo {
-    display: none;
+    display: block;
+    height: 80px;
+    width: 80px;
+    left: 0;
+    top: 0;
+    float: left;
 }
 
 
@@ -118,6 +124,7 @@ MEDIA QUERIES
         left: 0;
         top: 0;
         margin-top: 28px;
+        margin-left: 15px;
         height: 80px;
         width: 80px;
     }
@@ -179,9 +186,8 @@ img {
 }
 
 iframe {
-    width: 1700px;
+    width: 100vh;
     max-width: 100%;
-    padding: 10px;
 }
 
 
@@ -372,4 +378,24 @@ iframe {
         top: 15px;
         right: 35px;
     }
+}
+
+
+/* Combo box */
+
+.combobox {
+    text-align: center;
+}
+
+.caption {
+    display: inline-block;
+    opacity: 80%;
+    top: -20vh;
+    position: relative;
+    width: 45vh;
+    background: #ece9e6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ece9e6, #ffffff);
 }
