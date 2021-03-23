@@ -132,7 +132,6 @@ MEDIA QUERIES
         width: 80px;
     }
     #hamburger {
-        background-color: var(--white);
         display: block;
     }
 }
