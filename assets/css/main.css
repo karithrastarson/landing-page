@@ -45,7 +45,6 @@ TOP NAVIGATION STUFF BEGINS
 
 .topnav {
     float: left;
-    background-color: var(--light-background);
     overflow: hidden;
     margin: 20px;
 }
