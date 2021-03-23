@@ -595,3 +595,101 @@ body,
         /* Remove this if you don't want the 3D effect */
     }
 }
+
+
+/* CTA */
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--main-text-colour);
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.96);
+}
+
+@media screen and (max-width: 500px) {
+    .cta:before {
+        width: 100%;
+    }
+    .cta svg {
+        transform: translateX(0);
+    }
+}
+
+.rsvp-push {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    margin: 60px -20px -20px -20px;
+    padding-left: 20px;
+    height: 30px;
+    clear: both;
+    background-color: black;
+    color: var(--white-text-colour);
+}
+
+.wrapper {
+    position: relative;
+    min-height: calc(100vh - 50px);
+    margin: 0 auto -50px;
+}
