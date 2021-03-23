@@ -31,3 +31,11 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("hamburger").style.display = "block";
 }
+
+function flip() {
+    document.getElementById("flip-box-inner").style.transform = "rotateY(180deg)";
+}
+
+function flipBack() {
+    document.getElementById("flip-box-inner").style.transform = "rotateY(360deg)";
+}
