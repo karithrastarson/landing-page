@@ -1,21 +1,11 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 
+
 /* FONT */
-
-
-/* @font-face {
-    font-family: "ROCHA", sans-serif;
-    src: url(/assets/fonts/RozhaOne-Regular.ttf);
-} */
-
-@font-face {
-    font-family: raleway;
-    src: url(/assets/fonts/Raleway-Regular.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap');
 * {
-    font-family: frank-new, Arial, sans-serif;
+    font-family: 'BioRhyme', serif;
 }
 
 
