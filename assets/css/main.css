@@ -215,6 +215,10 @@ iframe {
     grid-column-end: 3;
 }
 
+.fullwidth p {
+    max-width: 540px;
+}
+
 .left {
     grid-column-start: 1;
     grid-column-end: 2;
