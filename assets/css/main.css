@@ -694,3 +694,12 @@ footer {
     min-height: calc(100vh - 50px);
     margin: 0 auto -50px;
 }
+
+.links {
+    color: var(--main-text-colour);
+}
+.links:hover {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+

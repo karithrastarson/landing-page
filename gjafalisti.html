@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Harpa og Kári</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/logo/logo-favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body onLoad="buildHtmlTable('#excelDataTable')">
+    <!--Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="home.html">forsíða</a>
+            <a href="veislan.html">veislan</a>
+            <a href="sagan.html">sagan</a>
+            <a href="myndir.html">myndir</a>
+            <a href="gjafalisti.html">gjafalisti</a>
+            <a href="https://harpaogkari.app.rsvpify.com" target="_blank">rsvp</a>
+
+        </div>
+    </div>
+
+
+    <!-- Top Navigation -->
+    <div class="topnav" id="topnav">
+        <button class="hamburger hamburger--collapse" id="hamburger" type="button" onclick="openNav()">
+            <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+              </span>
+        </button>
+        <a href="home.html" class="navlogo"><img src="images/logo/logo-opague.png" /></a>
+        <a href="home.html" class="nav">forsíða</a>
+        <a href="/sagan.html" class="nav">sagan</a>
+        <a href="/veislan.html" class="nav">veislan</a>
+        <a href="/myndir.html" class="nav">myndir</a>
+        <a href="/gjafalisti.html" class="nav active">gjafalisti</a>
+        <a href="https://harpaogkari.app.rsvpify.com" class="nav">rsvp</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="wrapper">
+        <div class="wrapper-item fullwidth">
+            <h1> Gjafalisti </h1>
+            <p>
+                Við höfum tekið saman gjafalista á eftirtöldum stöðum.
+            </p>
+            <h2><a href="www.lifoglist.is" target="_blank" class="links">
+                Líf og List
+            , Smáralind
+        </a>
+            </h2>
+            <a href="tel:+354 5288000" class="links"><i class="fa fa-phone" aria-hidden="true"></i>528-8000</a><br>
+            <div class="wrapper-item fullwidth fade-in-now">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1742.6872809878087!2d-21.88530158407839!3d64.10115732666628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d60cb3348b41ef%3A0x162ff4d5c25e2e5!2sSm%C3%A1ralind!5e0!3m2!1sda!2sis!4v1622840814055!5m2!1sda!2sis"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <h2><a href="www.epal.is" target="_blank" class="links">
+                Epal
+            , Skeifunni
+        </a>
+            </h2>
+            <a href="tel:+354 5687733" class="links"><i class="fa fa-phone" aria-hidden="true"></i>568-7733</a><br>
+            <div class="wrapper-item fullwidth fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27948.34973129877!2d-21.886883109830098!3d64.13242288855832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674bd4a549275%3A0xd13f5db821cd4c40!2sEpal!5e0!3m2!1sda!2sis!4v1622842363654!5m2!1sda!2sis"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+
+            <p>Farið í afgreiðsluna og gefið upp nöfnin okkar. Þá mun einhver finna fyrir ykkur 
+                listann okkar og hjálpa ykkur.
+            </p>
+
+        </div>
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/fade-in.js"></script>
+</body>
+
+</html>
